@@ -121,7 +121,7 @@ body {
     .main__registration,
     .main__authorization {
         width: 60vw;
-        height: 80vh;
+        height: 55vh;
         top: 5vh;
         left: 15vw;
         border-radius: 8vw;
@@ -349,7 +349,7 @@ input:last-child:hover {
 
     form label {
         font-size: 3.5vw;
-        margin-top: 4vh;
+        margin-top: 2vh;
         margin-bottom: 3vh;
     }
 
@@ -368,7 +368,7 @@ input:last-child:hover {
     }
 
     input:last-child {
-        margin-top: 5vh;
+        margin-top: 1vh;
         font-size: 3vw;
     }
 
@@ -483,7 +483,7 @@ input:last-child:hover {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 7vh;
+        padding-top: 3vh;
     }
 
     .links_google {
