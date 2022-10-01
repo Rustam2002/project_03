@@ -47,16 +47,11 @@ body {
 
 @media (max-width:821px) {
     .main .main__color img {
-        top: 30vh;
-        left: 10vw;
-        width: 20vw;
+        display: none;
     }
 
     .main__color_sec img {
-        width: 23vw;
-        position: fixed;
-        top: 15vh;
-        right: 0;
+       display: none;
     }
 }
 
@@ -109,6 +104,16 @@ body {
     padding: 5vh 3vw;
 }
 
+@media (max-width:1181px) {
+
+    .main__registration,
+    .main__authorization {
+        width: 40vw;
+        height: 50vw;
+        top: 10vh;
+        left: 27vw;
+    }
+}
 @media (max-width:1025px) {
 
     .main__registration,
@@ -122,12 +127,17 @@ body {
 
 @media (max-width:821px) {
 
-    .main__registration,
+    .main__registration{
+        width: 60vw;
+        height: 85vw;
+        top: 20vw;
+        left: 17vw;
+    }
     .main__authorization {
-        width: 50vw;
-        height: 45vh;
-        top: 2vh;
-        left: 22vw;
+        width: 60vw;
+        height: 85vw;
+        top: 20vw;
+        left: 17vw;
     }
 }
 
@@ -144,27 +154,28 @@ body {
 
 @media (max-width:426px) {
 
-    .main__registration{
+    .main__registration {
         width: 70vw;
         height: 110vw;
-        top: 5vh;
+        top: 40vw;
         left: 10vw;
         border-radius: 8vw;
-        padding: 5vh 5vw;
+        padding: 10vw 5vw;
     }
+
     .main__authorization {
         width: 70vw;
-        height: 60vh;
-        top: 2vh;
+        height: 125vw;
+        top: 33vw;
         left: 10vw;
         border-radius: 8vw;
-        padding: 5vh 5vw;
+        padding: 10vw 5vw;
     }
 }
 
 @media (max-width:376px) {
 
-    .main__registration{
+    .main__registration {
         width: 70vw;
         height: 110vw;
         top: 15vh;
@@ -172,6 +183,7 @@ body {
         border-radius: 8vw;
         padding: 5vh 5vw;
     }
+
     .main__authorization {
         width: 70vw;
         height: 60vh;
@@ -243,7 +255,7 @@ body {
 
     .main__head p,
     a {
-        font-size: 1.7vw !important;
+        font-size: 2.5vw !important;
     }
 }
 
@@ -274,6 +286,15 @@ body {
 
         display: block !important;
     }
+
+    .main__registration .main__head,
+    .main__authorization .main__head {
+        height: 17vw;
+    }
+
+    .main__head p {
+        margin-bottom: 2vw;
+    }
 }
 
 .main__registration h1,
@@ -294,7 +315,7 @@ form label {
 }
 
 form input {
-    height: 3vh;
+    height: 2vw;
     border: none;
     border: .2vw solid #ADADAD;
     padding: 1.4vh 1.5vw;
@@ -375,33 +396,34 @@ input:last-child:hover {
     }
 
     form .lp {
-        margin-top: 1vh;
+        margin-top: 3vw;
         margin-bottom: 2vh;
     }
 
     form label {
-        font-size: 2.3vw;
-        margin-top: 2vh;
-        margin-bottom: 1vh;
+        font-size: 2.5vw;
+        margin-top: 5vw;
+        margin-bottom: 3vw;
     }
 
     form input::-webkit-input-placeholder {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     form input {
-        font-size: 2vw;
-        padding: .5vh 1.5vw;
+        font-size: 3vw;
+        padding: 3vw 1.5vw;
+        border-radius: 1.5vw;
     }
 
     form .password {
-        background-position: 45vw;
-        background-size: 3vw;
+        background-position: 53vw;
+        background-size: 4vw;
     }
 
     input:last-child {
-        font-size: 2vw;
-        height: 3.5vh;
+        font-size: 3vw;
+        height: 9vw;
     }
 }
 
@@ -453,14 +475,15 @@ input:last-child:hover {
 
     form label {
         font-size: 3.5vw;
-        margin-top: 2vh;
-        margin-bottom: 3vh;
+        margin-top: 5vw;
+        margin-bottom: 4.5vw;
     }
 
     form input {
+        height: 5vw;
         border-radius: 2vw;
         font-size: 3.2vw;
-        padding: 1.2vh 1.5vw;
+        padding: 1.8vw 1.5vw;
     }
 
     form input::-webkit-input-placeholder {
@@ -473,14 +496,17 @@ input:last-child:hover {
     }
 
     input:last-child {
-        margin-top: 1vh;
+        margin-top: 3vw;
         font-size: 3.2vw;
-        height: 5vh;
+        height: 12vw;
     }
 
     form input:focus {
         outline: none;
         border-color: #E48700;
+    }
+    form .lp {
+        margin-top: 3vw;
     }
 }
 
@@ -559,13 +585,13 @@ input:last-child:hover {
 
 @media (max-width:821px) {
     .main p {
-
-        padding-top: 1.5vh;
+        font-size: 2.5vw;
+        padding-top: 2vw;
     }
 
     .links_google {
-        font-size: 1.7vw;
-        padding: 1vh 2vw;
+        font-size: 2.5vw;
+        padding: 2vw 2vw;
         padding-right: 4vw;
     }
 
@@ -580,13 +606,12 @@ input:last-child:hover {
     }
 
     .main__links img {
-        width: 2.3vw;
+        width: 4vw;
     }
 }
 
 @media (max-width:769px) {
     .main p {
-
         padding-top: 1.5vh;
     }
 
@@ -622,19 +647,19 @@ input:last-child:hover {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 3vh;
+        padding-top: 7vw;
     }
 
     .links_google {
         font-size: 3vw;
         padding-right: 4vw;
-        padding: .5vh 2vw;
+        padding: 1.5vw 2vw;
     }
 
 
     .links_facebook,
     .links_apple {
-        padding: .5vh 1.5vw;
+        padding: 1.5vw 1.5vw;
     }
 
     .main__links img {
@@ -680,17 +705,26 @@ input:last-child:hover {
         margin-top: 2vh;
     }
 }
+
 @media (max-width:821px) {
 
     .mid_input {
-        padding-top: 1.5vh;
+        padding-top: 2vw;
     }
 
     .mid_input input {
         margin-top: 1.5vh;
         width: 85%;
-        height: 1vh;
-        font-size: 2vw;
+        height: 4vw;
+        font-size: 3vw;
+        border-radius: 1.5vw;
+    }
+    .mobile {
+        width: 15vw;
+        text-align: left !important;
+    }
+    .mobile p {
+        text-align: left !important;
     }
 }
 
@@ -709,15 +743,17 @@ input:last-child:hover {
 
 @media (max-width:426px) {
     .mid_input {
-        padding-top: 4vh;
-        padding-bottom: 2vh;
+        padding-top: 8vw;
+        padding-bottom: 5vw;
     }
 
     .mid_input input {
-        margin-top: 2vh;
+        margin-top: 5vw;
         border-radius: 2.5vw;
-        height: 2vh;
+        height: 4vw;
         font-size: 3vw;
+
+        padding: 2vw 1.5vw;
     }
 
     .mobile {
